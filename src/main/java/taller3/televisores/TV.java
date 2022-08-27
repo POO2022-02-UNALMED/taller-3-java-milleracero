@@ -15,7 +15,7 @@ public class TV {
 		TV.numTV++;
 		this.canal=1;
 		this.volumen=1;
-		this.precio=500;
+		this.precio=500
 	}
 	
 	public void contadorTV() {
@@ -100,4 +100,11 @@ public class TV {
 		}
 	}
 	
+	public static int getNumTV() {
+		return numTV;
+	}
+
+	public static void setNumTV(int numTV) {
+		TV.numTV = numTV;
+	}
 }
