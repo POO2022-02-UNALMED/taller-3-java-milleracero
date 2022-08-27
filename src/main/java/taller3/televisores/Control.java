@@ -5,10 +5,6 @@ public class Control {
 
 	TV tv;
 	
-	public void enlazar(TV tv) {
-		this.tv=tv;
-		tv.control=this;
-	}
 	
 	public TV getTv() {
 		return tv;
@@ -46,6 +42,10 @@ public class Control {
 		tv.setCanal(canal);
 	}
 	
-}		
+	public void enlazar(TV tv) {
+		this.tv=tv;
+		tv.control=this;
+	}
+}
 
 
