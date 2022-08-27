@@ -15,11 +15,7 @@ public class TV {
 		TV.numTV++;
 		this.canal=1;
 		this.volumen=1;
-		this.precio=500
-	}
-	
-	public void contadorTV() {
-		numTV++;
+		this.precio=500;
 	}
 	
 	public Marca getMarca() {
