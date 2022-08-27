@@ -80,24 +80,20 @@ public class TV {
 	}
 	
 	public void canalDown() {
-		if (estado!=true || canal==0) {
-			return;
-		}
+		if (estado==true&&canal<0) {
 		canal--;
+		}
 	}
 	
 	public void volumenUp() {
-		if (estado!=true || volumen==7) {
-			return;
-		}
+		if (estado==true&&volumen>7) {
 		volumen++;
-	}
-	
-	public void volumenDown() {
-		if (estado!=true || volumen==0) {
-			return;
 		}
+	}
+	public void volumenDown() {
+		if (estado==true&&volumen<0) {
 		volumen--;
+		}
 	}
 	
 	public static int getNumTV() {
