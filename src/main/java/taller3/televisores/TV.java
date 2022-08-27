@@ -80,7 +80,7 @@ public class TV {
 	}
 	
 	public void canalDown() {
-		if (estado==true&&canal<0) {
+		if (estado==true&&canal>1) {
 		canal--;
 		}
 	}
