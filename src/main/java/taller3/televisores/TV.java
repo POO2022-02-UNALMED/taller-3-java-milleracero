@@ -14,11 +14,14 @@ public class TV {
 		this.estado=estado;
 	}
 	
-	public int getCanal() {
+	public int getCanal(){
 		return canal;
+		
 	}
 	public void setCanal(int canal) {
+		if(estado==true&&canal<=120&&canal>=1) {
 		this.canal = canal;
+		}
 	}
 	public int getVolumen() {
 		return volumen;
